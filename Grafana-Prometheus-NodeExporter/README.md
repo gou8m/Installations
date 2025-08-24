@@ -1,19 +1,15 @@
 # Monitoring Stack Setup: Grafana + Prometheus + Node Exporter
 
-<div align="center">
+<p align="left">
+  <strong>Project Dashboard Preview</strong><br>
+  
+  <img src="https://github.com/user-attachments/assets/8e803ed3-7385-4937-8d2e-38743e8c6fac" 
+       alt="Project Screenshot" 
+       width="500" />
+  <br><small><i>Click the image to view full size.</i></small>
 
-  <h3>Project Dashboard Preview</h3>
+</p>
 
-  <a href="https://github.com/user-attachments/assets/8e803ed3-7385-4937-8d2e-38743e8c6fac">
-    <img src="https://github.com/user-attachments/assets/8e803ed3-7385-4937-8d2e-38743e8c6fac" 
-         alt="Project Screenshot" 
-         width="500" 
-         style="border: 2px solid #4CAF50; border-radius: 10px; box-shadow: 3px 3px 15px rgba(0,0,0,0.3);" />
-  </a>
-
-  <p><i>Click the image to view full-size version.</i></p>
-
-</div>
 
 
 
