@@ -49,11 +49,12 @@ sudo systemctl restart prometheus
 ## Step 2: Configure Grafana Data Source
 
 1. Go to `http://<EC2-Public-IP>:3000`  
-2. Login (default: `admin/admin`)  
-3. On the left-hand menu, click **Connections** (or **Data Sources**)  
-4. Click **Add data source**  
-5. Select **Prometheus**  
-6. Set URL:
+2. Login (default: `admin/admin`)
+3. Change Password
+4. On the left-hand menu, click **Connections** (or **Data Sources**)  
+5. Click **Add data source**  
+6. Select **Prometheus**  
+7. Set URL:
 
 http://localhost:9090
 
@@ -85,6 +86,24 @@ http://localhost:9090
   1. Install Node Exporter on each server
   2. Add `<IP>:9100` entries in Prometheus `prometheus.yml`
   3. Restart Prometheus after editing
+
+---
+## Stress Testing the Server
+
+The following commands install the `stress` tool and simulate CPU and memory load on your servers for practice purposes. This is useful for:
+
+- Testing Node Exporter metrics in Prometheus
+- Observing Grafana dashboard updates under load
+- Practicing resource monitoring and alerting
+
+```bash
+sudo apt update
+sudo apt install -y stress
+stress --vm 1 --vm-bytes 512mb --vm-keep --timeout 60s
+stress --cpu 1 --timeout 60
+```
+
+In Grafana dashboard, change IPs to view different EC2 loads.
 
 ---
 
