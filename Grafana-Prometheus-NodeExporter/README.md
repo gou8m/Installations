@@ -68,7 +68,14 @@ http://localhost:9090
 1. On the left-hand menu, click **Dashboards → New → Import**  
 2. In **Import via Grafana.com ID**, enter:
 
-1860
+```1860```
+
+What is 1860?
+
+> This is a Grafana.com dashboard ID. Grafana has a repository of pre-built dashboards for various metrics and systems.
+
+> Dashboard 1860 is a ready-made Prometheus Node Exporter dashboard for monitoring system metrics like CPU, memory, disk usage, and network.
+
 
 3. Click **Load**, then **Import**  
 
