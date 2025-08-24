@@ -23,7 +23,7 @@ This guide will help you configure **Grafana**, **Prometheus**, and **Node Expor
 Edit Prometheus config:
 
 ```
-sudo nano /usr/local/prometheus/prometheus.yml
+sudo vi etc/prometheus/prometheus.yml
 ```
 
 
