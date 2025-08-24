@@ -1,5 +1,8 @@
 # Monitoring Stack Setup: Grafana + Prometheus + Node Exporter
 
+<img width="1510" height="839" alt="image" src="https://github.com/user-attachments/assets/8e803ed3-7385-4937-8d2e-38743e8c6fac" />
+
+
 This guide will help you configure **Grafana**, **Prometheus**, and **Node Exporter** on a single Ubuntu server (or EC2 instance). It also covers adding Prometheus as a data source in Grafana and importing a sample dashboard.
 
 ---
