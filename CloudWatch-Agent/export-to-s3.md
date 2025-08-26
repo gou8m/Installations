@@ -22,24 +22,17 @@ This guide explains how to export logs from **Amazon CloudWatch** to an **S3 buc
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "AllowCWLogsToWrite",
+      "Sid": "AllowCloudWatchLogsExport",
       "Effect": "Allow",
       "Principal": {
-        "Service": "logs.us-east-1.amazonaws.com"
+        "Service": "logs.<REGION>.amazonaws.com"
       },
-      "Action": "s3:*",
-      "Resource": [
-        "arn:aws:s3:::gou8m-bucket",
-        "arn:aws:s3:::gou8m-bucket/*"
-      ],
-      "Condition": {
-        "StringEquals": {
-          "aws:SourceAccount": "9111********"
-        }
-      }
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
     }
   ]
 }
+
 ```
 ---
 
